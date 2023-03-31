@@ -2,7 +2,7 @@
 用Docker实现一台Alibaba轻量ECS搭建Hadoop集群
 
 
-一、开始前的准备
+##一、开始前的准备
 
 1.用SSH软件登录ECS(putty,Xshell等)
 
@@ -19,7 +19,7 @@
     docker pull centos:8
   
   
-二、创建一个容器 java_ssh_proto，用于配置一个包含 Java 和 SSH 的环境
+##二、创建一个容器 java_ssh_proto，用于配置一个包含 Java 和 SSH 的环境
 
 1.创建容器：
 
@@ -72,7 +72,7 @@
     docker commit java_ssh_proto java_ssh
 
 
-三、Hadoop 安装
+##三、Hadoop 安装
 
 1.在hadoop官网(Hadoop 官网地址：http://hadoop.apache.org/)下载压缩包Hadoop 3.1.4 镜像，并将它上传到ecs
 
@@ -118,7 +118,7 @@
   这里hadoop version就可以显示hadoop版本了
   
   
-四、HDFS配置与使用
+##四、HDFS配置与使用
 
 1.进入hadoop_single容器，新建用户，名为 hadoop：
 
